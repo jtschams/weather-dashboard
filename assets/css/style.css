@@ -1,0 +1,106 @@
+body * {
+    font-family: Helvetica, 'Segoe UI', Verdana, system-ui;
+    font-size: 1em;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background-color: #371de6;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: 600;
+    font-family: Arial, Calibri, sans-serif;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-family: Arial, Calibri, sans-serif;
+}
+
+main{
+    display: flex;
+}
+
+section {
+    padding: 10px;
+}
+
+section:first-of-type {
+    min-width: 20vw;
+}
+
+button {
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 1em;
+    height: 2em;
+    border-radius: .5em;
+    border: none;
+    background-color: #6991e3;
+    font-weight: 600;
+    color: white;
+}
+
+.city-shortcut {
+    color: black;
+    background-color: #a6a6a6;
+}
+
+input {
+    width: calc(100% - 18px);
+    margin: 10px 0px;
+    font-size: 1em;
+    height: 2em;
+    border-radius: .5em;
+    padding-left: 10px;
+}
+
+#past-searches {
+    border-top: 2px solid #a6a6a6 ;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+section:last-of-type > * {
+    min-width: 65vw;
+    margin: 10px 0px;
+    line-height: 2em;
+}
+
+#today > div {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: .5rem;
+}
+
+#today h2 {
+    margin-bottom: 20px;
+}
+
+#five-day {
+    display: flex;
+    justify-content: space-around;
+}
+
+article {
+    background-color: #323d4f;
+    color: white;
+    width: 12vw;
+    border-radius: .5rem;
+}
+
+article > * {
+    margin: 10px;
+}
+
+/* Search for a city breaks at ~740px */

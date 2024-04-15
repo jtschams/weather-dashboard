@@ -12,27 +12,23 @@
     <header><h1>Local Weather Search</h1></header>
     <main>
         <section>
-            <form>
+            <form id="search-form">
                 <label for="city-search"><h2>Search for a City</h2></label>
                 <input type="text" id="city-search"/>
-                <button type="submit">Search</button>
+                <button type="submit" form="search-form">Search</button>
             </form>
             <div id="past-searches">
                 <button class="city-shortcut">Austin</button>
-                <button class="city-shortcut">Austin</button>
+                <button class="city-shortcut" data-lon="x" data-lat="y">Austin</button>
                 <button class="city-shortcut">Austin</button>
                 <button class="city-shortcut">Austin</button>
             </div>
         </section>
         <section>
             <div id="today">
-                <h2>Name and date</h2>
-                <p>Temp</p>
-                <p>Wind</p>
-                <p>Humidity</p>
             </div>
-            <h2>5-Day Forecast</h2>
-            <div id="5-day">
+            <h2 id="forecast-title"></h2>
+            <div id="five-day">
                 <article>
                     <h3>Date</h3>
                     <figure>Icon</figure>
