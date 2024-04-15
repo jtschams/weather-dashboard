@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+    <title>Weather Dashboard</title>
+    <script defer src="./assets/js/scripts.js"></script>
 </head>
 <body>
-    
+    <header><h1>Local Weather Search</h1></header>
+    <main>
+        <section>
+            <form>
+                <label for="city-search"><h2>Search for a City</h2></label>
+                <input type="text" id="city-search"/>
+                <button type="submit">Search</button>
+            </form>
+            <div id="past-searches">
+                <button class="city-shortcut">Austin</button>
+                <button class="city-shortcut">Austin</button>
+                <button class="city-shortcut">Austin</button>
+                <button class="city-shortcut">Austin</button>
+            </div>
+        </section>
+        <section>
+            <div id="today">
+                <h2>Name and date</h2>
+                <p>Temp</p>
+                <p>Wind</p>
+                <p>Humidity</p>
+            </div>
+            <h2>5-Day Forecast</h2>
+            <div id="5-day">
+                <article>
+                    <h3>Date</h3>
+                    <figure>Icon</figure>
+                    <p>Temp</p>
+                    <p>Wind</p>
+                    <p>Humidity</p>
+                </article>
+                <article>
+                    <h3>Date</h3>
+                    <figure>Icon</figure>
+                    <p>Temp</p>
+                    <p>Wind</p>
+                    <p>Humidity</p>
+                </article>
+                <article>
+                    <h3>Date</h3>
+                    <figure>Icon</figure>
+                    <p>Temp</p>
+                    <p>Wind</p>
+                    <p>Humidity</p>
+                </article>
+                <article>
+                    <h3>Date</h3>
+                    <figure>Icon</figure>
+                    <p>Temp</p>
+                    <p>Wind</p>
+                    <p>Humidity</p>
+                </article>
+                <article>
+                    <h3>Date</h3>
+                    <figure>Icon</figure>
+                    <p>Temp</p>
+                    <p>Wind</p>
+                    <p>Humidity</p>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
