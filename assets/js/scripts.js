@@ -30,7 +30,6 @@ const getWeather = function(city) {
         return response.json();
     })
     .then(function(data) {
-        console.log(data);
         currentWeather.innerHTML = `<div><h2>${data.name} (${dayjs().format("MM/DD/YYYY")})</h2><img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png"><p>Temp: ${data.main.temp} °F</p><p>Wind: ${data.wind.speed} MPH</p><p>Humidity: ${data.main.humidity}%</p></div>`;
     });
     // 5-Day Forecast
