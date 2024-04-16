@@ -29,6 +29,7 @@ h3 {
 
 main{
     display: flex;
+    flex-wrap: wrap;
 }
 
 section {
@@ -36,7 +37,7 @@ section {
 }
 
 section:first-of-type {
-    min-width: 20vw;
+    width: 20vw;
 }
 
 button {
@@ -83,8 +84,8 @@ section:last-of-type > * {
     border-radius: .5rem;
 }
 
-#today h2 {
-    margin-bottom: 20px;
+#today  img {
+    height: 3.4em;
 }
 
 #five-day {
@@ -93,7 +94,7 @@ section:last-of-type > * {
 }
 
 article {
-    background-color: #323d4f;
+    background-color: #46556d;
     color: white;
     width: 12vw;
     border-radius: .5rem;
@@ -103,4 +104,57 @@ article > * {
     margin: 10px;
 }
 
-/* Search for a city breaks at ~740px */
+article img {
+    margin: 0 20px;
+    height: 2em;
+}
+
+@media screen and (max-width:1080px) {
+    section:first-of-type {
+        width: 100vw;
+    }
+    
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    form > * {
+        width: 30vw;
+    }
+
+    #past-searches, .city-shortcut {
+        display: none;
+    }
+
+    section:last-of-type {
+        width: 100vw;
+    }
+
+    article {
+        width: 17vw;
+    }
+}
+
+@media screen and (max-width:855px) {
+    form > * {
+        width: 90vw;
+    }
+
+    #five-day {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    article {
+        width: 80vw;
+    }
+    article img {
+        float: right;
+        height: auto;
+        margin: 0 calc(80vw - 250px) 0 0;
+    }
+}

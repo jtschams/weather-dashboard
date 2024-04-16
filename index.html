@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css"/>
     <link rel="stylesheet" href="./assets/css/style.css"/>
     <title>Weather Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script defer src="./assets/js/scripts.js"></script>
 </head>
 <body>
@@ -13,58 +14,19 @@
     <main>
         <section>
             <form id="search-form">
-                <label for="city-search"><h2>Search for a City</h2></label>
+                <label for="city-search"><h2>Search for a City:</h2></label>
                 <input type="text" id="city-search"/>
                 <button type="submit" form="search-form">Search</button>
             </form>
-            <div id="past-searches">
-                <button class="city-shortcut">Austin</button>
-                <button class="city-shortcut" data-lon="x" data-lat="y">Austin</button>
-                <button class="city-shortcut">Austin</button>
-                <button class="city-shortcut">Austin</button>
-            </div>
+            <div id="past-searches"></div>
+            <!-- Past Search buttons appended here -->
         </section>
         <section>
-            <div id="today">
-            </div>
+            <div id="today"></div>
+            <!-- Today's Forecast created here -->
             <h2 id="forecast-title"></h2>
-            <div id="five-day">
-                <article>
-                    <h3>Date</h3>
-                    <figure>Icon</figure>
-                    <p>Temp</p>
-                    <p>Wind</p>
-                    <p>Humidity</p>
-                </article>
-                <article>
-                    <h3>Date</h3>
-                    <figure>Icon</figure>
-                    <p>Temp</p>
-                    <p>Wind</p>
-                    <p>Humidity</p>
-                </article>
-                <article>
-                    <h3>Date</h3>
-                    <figure>Icon</figure>
-                    <p>Temp</p>
-                    <p>Wind</p>
-                    <p>Humidity</p>
-                </article>
-                <article>
-                    <h3>Date</h3>
-                    <figure>Icon</figure>
-                    <p>Temp</p>
-                    <p>Wind</p>
-                    <p>Humidity</p>
-                </article>
-                <article>
-                    <h3>Date</h3>
-                    <figure>Icon</figure>
-                    <p>Temp</p>
-                    <p>Wind</p>
-                    <p>Humidity</p>
-                </article>
-            </div>
+            <div id="five-day"></div>
+            <!-- 5-Day Forecast created here -->
         </section>
     </main>
 </body>
